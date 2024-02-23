@@ -1,0 +1,27 @@
+﻿@{
+    Layout = null;
+}
+@model GuestInvite;
+<!Doctype html>
+<html>
+    <head>
+        <meta name="viewport" content="="width="device-width" />
+        <title>Rsvp Form</title>
+    </head>
+    <body>
+        <form asp-action="RsvpForm" method="post">
+        <div>
+            <label asp-for="Name">Your Name: </label>
+            <input type="text" asp-for="Name"/>
+        </div>
+        <div>
+            <label asp-for="Email">Email Address: </label>
+            <input type="email" asp-for="Email" />
+        </div>
+        <div>
+            <label asp-for="Phone">Cell Number: </label>
+            <input type="number" asp-for="Phone" />
+        </div>
+        </form>
+    </body>
+</html>
